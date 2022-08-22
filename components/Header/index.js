@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link';
 export default function Header() {
   return (
     <>
@@ -23,42 +24,56 @@ export default function Header() {
               </a>
               <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li className="nav-item active">
-                  <a className="nav-link" href="./">
-                    Trang chủ <span className="sr-only">(current)</span>
-                  </a>
+                  <Link href="./">
+                    <a className="nav-link" >
+                      Trang chủ <span className="sr-only">(current)</span>
+                    </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="./lich-truc-tuyen">
+                <Link  href="./lich-truc-tuyen">
+                  <a className="nav-link">
                     Lịch Trực Tiếp
                   </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="./high-lights">
+                <Link href="./high-lights">
+                  <a className="nav-link" >
                     Highlights
                   </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="./tin-tuc-su-kien">
+                <Link href="./tin-tuc-su-kien">
+                  <a className="nav-link" >
                     Tin Tức Sự Kiện
                   </a>
+                  </Link>
                 </li>
               </ul>
               <div className="my-2 my-lg-0 w-400 header-right">
                 <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li className="nav-item active">
-                    <a className="nav-link" href="#">
-                        Ứng tuyển BLV
-                    </a>
+                    <Link href="#">
+                      <a className="nav-link" >
+                          Ứng tuyển BLV
+                      </a>
+                    </Link>
                     </li>
                     <li className="nav-item">
-                    <a className="nav-link" href="#">
+                    <Link href="#">
+                    <a className="nav-link" >
                         Đăng Nhập
                     </a>
+                    </Link>
                     </li>
                     <li className="nav-item">
-                    <a className="nav-link" href="#">
+                    <Link  href="#">
+                    <a className="nav-link">
                         Đăng Ký
                     </a>
+                    </Link>
                     </li>
                 </ul>
               </div>
